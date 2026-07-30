@@ -1,7 +1,6 @@
-import { useState } from "react";
+
 function App() { 
   
-  const [activeFilter, setActiveFilter] = useState("All");
   return (
     <div className="app">
 

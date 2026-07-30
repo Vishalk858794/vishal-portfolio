@@ -91,7 +91,7 @@ function App() {
     <div className="glow-circle"></div>
 
     <div className="profile-card">
-      <img src="/images/profile.jpg" alt="Vishal Kumar" />
+      <img src="/vishal.png" alt="Vishal Kumar" />
     </div>
   </div>
 </section>

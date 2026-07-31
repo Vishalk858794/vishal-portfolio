@@ -819,3 +819,66 @@ footer {
     gap: 22px;
   }
 }
+/* =========================================
+   VIEW PROJECT BUTTON FIX
+========================================= */
+
+.portfolio-media {
+  position: relative;
+}
+
+/* Project number - top left */
+.project-overlay {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: auto;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  pointer-events: none;
+}
+
+/* Number */
+.project-overlay span {
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* View Project button */
+.project-overlay a {
+  pointer-events: auto;
+
+  padding: 9px 15px;
+  border-radius: 25px;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(0, 212, 255, 0.5);
+
+  color: #00d4ff;
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.project-overlay a:hover {
+  background: #00d4ff;
+  color: #050505;
+  border-color: #00d4ff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.25);
+}

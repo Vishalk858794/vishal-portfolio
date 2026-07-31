@@ -154,68 +154,189 @@ function App() {
         </div>
       </section>
 
-     {/* Portfolio */}
-<section id="portfolio" className="section">
+    {/* Portfolio */}
+<section id="portfolio" className="section portfolio-section">
+
   <p className="section-label">MY WORK</p>
 
   <h2 className="section-title">
     Featured <span>Projects</span>
   </h2>
 
-  <div className="portfolio-filters">
-    <button>All</button>
-    <button>Motion Graphics</button>
-    <button>Video Editing</button>
-    <button>Logo Animation</button>
-  </div>
+  <p className="portfolio-intro">
+    A selection of motion graphics, video editing and visual
+    content created for digital platforms and brands.
+  </p>
 
   <div className="portfolio-grid">
 
+    {/* Project 1 */}
     <div className="portfolio-card">
-      <video controls muted loop playsInline>
-        <source src="/videos/project1.mp4" type="video/mp4" />
-      </video>
+      <div className="portfolio-media">
+        <video muted loop playsInline controls>
+          <source src="/videos/project1.mp4" type="video/mp4" />
+        </video>
+
+        <div className="project-overlay">
+          <span>01</span>
+          <a
+            href="https://www.behance.net/gallery/236738799/Motion-Graphic-Designer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
 
       <div className="portfolio-info">
-        <h3>Motion Graphics</h3>
-        <p>Creative motion graphics project</p>
+        <h3>Creative Motion Design</h3>
+        <p>
+          Motion graphics and visual animation created for digital
+          content and promotional media.
+        </p>
       </div>
     </div>
 
+    {/* Project 2 */}
     <div className="portfolio-card">
-      <video controls muted loop playsInline>
-        <source src="/videos/project2.mp4" type="video/mp4" />
-      </video>
+      <div className="portfolio-media">
+        <video muted loop playsInline controls>
+          <source src="/videos/project2.mp4" type="video/mp4" />
+        </video>
+
+        <div className="project-overlay">
+          <span>02</span>
+          <a
+            href="https://www.behance.net/gallery/236738799/Motion-Graphic-Designer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
 
       <div className="portfolio-info">
-        <h3>Video Editing</h3>
-        <p>Professional video editing project</p>
+        <h3>Cinematic Video Edit</h3>
+        <p>
+          Professional video editing with cinematic pacing,
+          transitions and visual storytelling.
+        </p>
       </div>
     </div>
 
+    {/* Project 3 */}
     <div className="portfolio-card">
-      <video controls muted loop playsInline>
-        <source src="/videos/project3.mp4" type="video/mp4" />
-      </video>
+      <div className="portfolio-media">
+        <video muted loop playsInline controls>
+          <source src="/videos/project3.mp4" type="video/mp4" />
+        </video>
+
+        <div className="project-overlay">
+          <span>03</span>
+          <a
+            href="https://www.behance.net/gallery/236738799/Motion-Graphic-Designer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
 
       <div className="portfolio-info">
-        <h3>Logo Animation</h3>
-        <p>Modern logo reveal animation</p>
+        <h3>Brand Animation</h3>
+        <p>
+          Modern brand animation and visual identity motion design.
+        </p>
       </div>
     </div>
 
+    {/* Project 4 */}
     <div className="portfolio-card">
-      <video controls muted loop playsInline>
-        <source src="/videos/project4.mp4" type="video/mp4" />
-      </video>
+      <div className="portfolio-media">
+        <video muted loop playsInline controls>
+          <source src="/videos/project4.mp4" type="video/mp4" />
+        </video>
+
+        <div className="project-overlay">
+          <span>04</span>
+          <a
+            href="https://www.behance.net/gallery/236738799/Motion-Graphic-Designer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
 
       <div className="portfolio-info">
-        <h3>Social Media Content</h3>
-        <p>Creative short-form video project</p>
+        <h3>Digital Content</h3>
+        <p>
+          Creative short-form content designed for social media
+          and digital platforms.
+        </p>
+      </div>
+    </div>
+
+    {/* Project 5 */}
+    <div className="portfolio-card">
+      <div className="portfolio-media">
+        <video muted loop playsInline controls>
+          <source src="/videos/project5.mp4" type="video/mp4" />
+        </video>
+
+        <div className="project-overlay">
+          <span>05</span>
+          <a
+            href="https://www.behance.net/gallery/236738799/Motion-Graphic-Designer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      <div className="portfolio-info">
+        <h3>Creative Visual Project</h3>
+        <p>
+          Creative motion and visual content created for digital platforms.
+        </p>
+      </div>
+    </div>
+
+    {/* Project 6 */}
+    <div className="portfolio-card">
+      <div className="portfolio-media">
+        <video muted loop playsInline controls>
+          <source src="/videos/project6.mp4" type="video/mp4" />
+        </video>
+
+        <div className="project-overlay">
+          <span>06</span>
+          <a
+            href="https://www.behance.net/gallery/236738799/Motion-Graphic-Designer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      <div className="portfolio-info">
+        <h3>Digital Motion Project</h3>
+        <p>
+          Modern visual content and animation for digital media.
+        </p>
       </div>
     </div>
 
   </div>
+
 </section>
 
       {/* Contact */}

@@ -882,3 +882,51 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.25);
 }
+/* PROJECT BUTTON - FINAL FIX */
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.project-number {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 212, 255, 0.45);
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.05);
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.project-button:hover {
+  background: #00d4ff;
+  color: #050505;
+  transform: translateY(-2px);
+}
+
+.portfolio-info {
+  padding: 20px !important;
+}
+
+.portfolio-info h3 {
+  margin: 0 0 8px !important;
+}
+
+.portfolio-info p {
+  margin: 0 !important;
+}

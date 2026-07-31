@@ -16,12 +16,118 @@ body {
   color: #ffffff;
 }
 
+
+/* ============================= */
+/* LIGHTWEIGHT ANIMATED BACKGROUND */
+/* ============================= */
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Moving cyan glow 1 */
+body::before {
+  content: "";
+  position: fixed;
+  width: 520px;
+  height: 520px;
+  top: -180px;
+  left: -180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 0.16) 0%,
+    rgba(0, 212, 255, 0.06) 35%,
+    transparent 70%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 0;
+  animation: bgFloatOne 12s ease-in-out infinite alternate;
+}
+
+/* Moving cyan glow 2 */
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  right: -180px;
+  bottom: -180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 0.12) 0%,
+    rgba(0, 212, 255, 0.04) 40%,
+    transparent 70%
+  );
+  filter: blur(35px);
+  pointer-events: none;
+  z-index: 0;
+  animation: bgFloatTwo 15s ease-in-out infinite alternate;
+}
+
+/* Keep website content above the background */
+.app {
+  position: relative;
+  z-index: 1;
+}
+
+/* Very subtle grid */
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.035;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  background-size: 55px 55px;
+}
+
+/* Animation movement */
+@keyframes bgFloatOne {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(180px, 100px) scale(1.08);
+  }
+  100% {
+    transform: translate(80px, 220px) scale(0.95);
+  }
+}
+
+@keyframes bgFloatTwo {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-160px, -100px) scale(1.08);
+  }
+  100% {
+    transform: translate(-80px, -180px) scale(0.95);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .app {
+  position: relative;
   overflow: hidden;
 }
 
